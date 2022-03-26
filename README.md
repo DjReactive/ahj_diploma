@@ -1,1 +1,1 @@
-# Домашнее задание RXJS [![Build status](https://ci.appveyor.com/api/projects/status/ndvsxy4brgumoa8n?svg=true)](https://ci.appveyor.com/project/DjReactive/ahj-11-rxjs)
+# Дипломная работа AHJ [![Build status](https://ci.appveyor.com/api/projects/status/6abhl8a6qlk0y4vw?svg=true)](https://ci.appveyor.com/project/DjReactive/ahj-diploma)

@@ -3,7 +3,7 @@ import AppFunc from '../AppFunc';
 export default class Request {
   constructor() {
     this.isRequestSend = false;
-    this.serverURL = 'http://localhost:7070';
+    this.serverURL = 'https://react-ahj-diploma.herokuapp.com';
   }
 
   send(url, data = null) {
