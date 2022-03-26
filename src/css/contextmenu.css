@@ -1,0 +1,47 @@
+.contextmenu {
+  position: absolute;
+  bottom: 65px;
+  background-color: rgba(60, 60, 60, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+  color: #eee;
+  z-index: 999;
+  width: 150px;
+}
+.contextmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contextmenu ul li {
+  padding: 8px 10px;
+}
+.contextmenu ul li a {
+  font-size: 14px;
+}
+.contextmenu ul li:hover {
+  background: #777;
+}
+.contextmenu ul li:last-child {
+  border-radius: 0 0 15px 15px;
+}
+.contextmenu ul li:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
+.contextmenu ul li:hover > a {
+  color: #eee;
+  cursor: pointer;
+}
+.ctx__icon {
+  font-family: Glyphter;
+  font-size: 18px;
+}
+.load__image, .load__file {
+  position: absolute;
+  top: -100vh;
+  opacity: 0;
+}
+@media (max-width:700px) {
+
+}

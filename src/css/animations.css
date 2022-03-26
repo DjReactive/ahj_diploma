@@ -1,0 +1,49 @@
+.search-open-animation {
+  transition-property: width;
+  transition-duration: 1s;
+}
+.animation-contextmenu {
+  animation-name: openContextMenu;
+  animation-duration: 0.1s;
+}
+@keyframes openContextMenu {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animation-error {
+  animation-name: showError;
+  animation-duration: 0.1s;
+}
+@keyframes showError {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animation-attachment {
+  animation-name: showAttach;
+  animation-duration: 0.2s;
+}
+@keyframes showAttach {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,141 @@
+.main__attachments {
+  height: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  transition-duration: 0.5s;
+  transition-property: height;
+}
+.attachment {
+  position: relative;
+  display: flex;
+  background: #555;
+  color: #ccc;
+  border-radius: 15px;
+  font-size: 12px;
+  width: calc(100%/3);
+}
+.attachment:hover {
+  background: #666;
+  color: #eee;
+  cursor: pointer;
+}
+.attachment__icon {
+  font-family: Glyphter;
+  font-size: 18px;
+  padding: 2px 0 2px 5px;
+  border-radius: 15px;
+  background: #569;
+  display: flex;
+  align-items: center;
+}
+.attachment__name {
+  font-size: 10px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.attachment__image {
+  height: 50px;
+  width: 100px;
+}
+.attachment__remove {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding-left: 3px;
+  line-height: 1.6;
+  font-size: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #444;
+  opacity: 0.9;
+  color: #999;
+  font-family: Glyphter;
+}
+.attachment__remove:hover {
+  color: red;
+  opcaity: 1;
+}
+
+/* Media */
+.attachment__audio {
+  height: 40px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.attachment__post-image {
+  max-width: 100%;
+  max-hwight: 200px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.attachment__post-image:hover {
+  transition: 0.4s;
+  outline: 2px solid #999;
+  box-shadow: #000 0 0 15px;
+}
+.attachment__document {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background: #444;
+  align-items: center;
+}
+.attachment__document > .filesize {
+  padding-left: 5px;
+  color: #777;
+  font-size: 12px;
+}
+.document__icon {
+  font-family: Glyphter;
+  font-size: 32px;
+  color: #eee;
+}
+
+/* Pinned messages */
+.pinned {
+  position: relative;
+  background: #333;
+  color: #777;
+  border-left: 3px solid #999;
+  padding: 5px 10px;
+  font-size: 12px;
+  width: 100%;
+  opacity: 0.8;
+}
+.pinned:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.pinned__title {
+  color: #eee;
+}
+.pinned__message > span, .pinned__attachments > span {
+  color: #aaa;
+}
+.pinned__message .icon, .pinned__attachments .icon {
+  font-family: Glyphter;
+}
+.pinned__icon {
+  position: absolute;
+  color: #eee;
+  font-family: Glyphter;
+  right: 5px;
+}
+.pinned__icon:hover {
+  color: red;
+}
+.pin__button {
+  background: #555;
+  border-radius: 15px;
+  color: #fff;
+}
+.pin__bg {
+  background: #555;
+}

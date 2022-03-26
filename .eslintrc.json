@@ -1,0 +1,33 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": "airbnb-base",
+  "env": {
+     "es6": true,
+     "browser": true,
+     "jest": true,
+     "worker": true,
+     "serviceworker": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": false }
+    ],
+    "max-classes-per-file": [
+      "error", 10
+    ],
+    "no-plusplus": [
+      "error",
+      { "allowForLoopAfterthoughts": true }
+    ],
+    "import/no-cycle": [
+      2, { "maxDepth": 10 }
+    ],
+    "consistent-return": "error"
+  }
+}
