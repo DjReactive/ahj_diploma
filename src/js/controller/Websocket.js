@@ -1,7 +1,7 @@
 export default class Websocket {
   constructor(builder) {
     this.wsUrl = 'react-ahj-diploma.herokuapp.com';
-    this.ws = new WebSocket(`ws://${this.wsUrl}/ws`);
+    this.ws = new WebSocket(`wss://${this.wsUrl}/ws`);
     this.ws.binaryType = 'blob'; // arraybuffer
     this.ignoreListen = null;
     // this.event = new CustomEvent('listen', {});
